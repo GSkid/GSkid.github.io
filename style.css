@@ -164,6 +164,16 @@ header ul {
 	margin: 20px;
 }
 
+#mech-finals {
+	width: 90%;
+	margin: 20px;
+}
+
+#bot-iso1 {
+	width: 60%;
+	margin: 20px;
+}
+
 /* ONLINE RESUME */
 .resume {
 	position: relative;
@@ -230,6 +240,22 @@ header ul {
 .edu-container {
 	margin-left: 40px;
 }
+
+
+/* HOOBIES */
+.hobbies {
+	position: relative;
+	top: 225px;
+	margin-bottom: 200px;
+}
+
+.hobbies p {
+	position: relative;
+	margin: 0 auto;
+	width: 50%;
+	min-width: 600px;
+}
+
 
 /* FOOTER */
 footer {

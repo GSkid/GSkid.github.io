@@ -13,7 +13,7 @@
 
 <body>
 	<header>
-		<h1 id="title">Grant Skidmore</h1>
+		<h1 id="title"><a href="https://www.linkedin.com/in/grant-skidmore/" class="link">Grant Skidmore</a></h1>
 		<ul>
 			<li class="nav"><a href="" class="link">Home</a></li>
 			<li class="nav"><a href="#projects" class="link">Projects</a></li>
@@ -33,6 +33,7 @@
 		</div>
 	</div>
 	
+
 	<div id="projects" class="label">
 	</div>
 
@@ -56,10 +57,24 @@
 
 		<div class="mech">
 			<h2 class="section-sub-header">2.  Mechatronics - <a href="./bin/Reports/MechatronicsProject_Report.pdf" class="link"><em>Autonomous Robot</em></a></h2>
-			<p></p>
+			<p>The autonomous robot designed for my mechatronics course was a difficult and stressful undertaking. Similar to my senior thesis, we were placed in teams to create a finished product at the end of a set time frame. Except for this project, the teams were made of three people and we only have 3.5 weeks to complete. I ended up being the team lead for this project as I scored the highest on the midterm, which was used to decide teams. Our design needed to be able to complete the course set by the teaching staff in under 2 minutes. The obstacle course involved an 8ft x 8ft playing 'field' of white mdf outlined with black tape. In the center of the field, there was also a 1.5ft x 1.5ft square also outlined in black tape. Throughout the field, there were 3 towers, standing 1 ft tall, with three, square faces each. These towers then had 9 holes in them, 3 for each side, placed in a line 6inches from the ground. For each tower, there was only a single 'correct' hole which was marked by black tape on the tower's wall underneath the correct hole which also had to be on the correct face which was marked by an EM signal outlining the edge of the wall's face. Our robot then had to put a ball in the correct hole of 2 of the 3 towers within the time limit without placing any incorrect balls.
+			</p>
+			<div class="image">
+				<img src="./bin/Images/MechFinals.jpg" id="mech-finals" alt="Team Picture at UCSC's Fall 2019 Mechatronics Competition"></img>
+				<h4 class="caption" id="mech-finals-caption">Team picture at UCSC's Fall 2019 Mechatronics Competition; from left to right: Kohl Grunt, Grant Skidmore, Janelle Chen. Our team placed 2nd in the overall competiton and 1st in the time trials with our robot submission.</h4>
+			</div>
+			<p>This was not an easy task, especially in under two minutes, so we spent a lot of time planning and working on the physical design of the robot. We decided to stay with only two wheels located in the middle of the robot which allowed us to turn left and right without moving forward or backward. We also decided on a side-facing ball dispensing mechanism so that we could easily drive forward and backward parallel to the tower walls. As for sensors, we definitely needed at least 4 reflective infrared optical sensors to detct black vs white surfaces; we also needed a custom infrared light sensor to pick up 2kHz light pulses and a custom electromagnetic field detector to pick up 25-27kHz EM signals. For other sensors, we decided to use 4 physical switches for collision detection and 2 ultrasonic ping sensors for distance tracking. For motors, we picked up two 12V DC motors off Amazon with high torque and low rpm. This allowed our robot to go down to slower speeds than we would have otherwise been able to with higher rpm motors. Essentially we traded off high speed for low speed and more power. 
+			</p>
+			<div class="image">
+				<img src="./bin/Images/MechBot_Iso1.png" id="bot-iso1" alt="Isometric View of the Completed Robot Submission"></img>
+				<h4 class="caption" id="mech-finals-caption">Isometric view of the robot with the front of the robot on the left and the back of the robot on the right.</h4>
+			</div>
+			<p>Our robot, as shown in the image above, has three layers to the chassis. The lowest layer is where we put most of the heavy components in order to create a lower center of gravity. The components here included the microcontroller, which was an <a href="https://reference.digilentinc.com/reference/microprocessor/uno32/start" class="link">Uno32 Microcontroller Board</a>; the power distribution board, which had pinouts to connect all system components to 5V, 3.3V, or Gnd; 3 reflective infrared sensors, which were used to keep the bot on the playing field; the center bumper for collision detection; the driver board for the motors; and the motors themselves. The second layer then had the other 3 bumpers for collision detection, the pcb created for the 2kHz light sensor, and storage for the battery. The top layer had a small breakout board for power distribution, the two ultrasonic ping sensors, the side-mounted reflective optical sensor, the pcb for the EM sensor, and the ball dispensing mechanism which also housed the sensor for the EM sensor and the 2kHz light sensor. All three of these layers were made with Solidworks and then cut out of MDF using a laser cutter. To keep them all together, we used wood glue supported by hot glue and tape.<br><br>The robot was controlled by a depth-first hierarchichal state machine running on the <a href="https://reference.digilentinc.com/reference/microprocessor/uno32/start" class="link">Uno32 Microcontroller Board</a>. This state machine included four distinct states: The Top Level, Driving, Navigating Around the Tower, and Dispensing the Ball. These four state machines used the events and services framework created by J. Edward Carrayer of Stanford University to update the state machine on occurances from sensors and hardware peripherals. In addition to the 4 state machines, we had 4 services that generated events from the sensors. All the code was written in C and uploaded to the Uno32 using a custom bootloader created by one of the past TAs (Max Dunne). 
+			</p>
 		</div>
 	</div>
 	
+
 	<div id="resume" class="label">
 	</div>
 	
@@ -155,9 +170,21 @@
 			
 		</div>
 	</div>
+
+
+
+	<div id="hobbies" class="label">
+	</div>
+
+	<div class="hobbies">
+		<h1 class="section-header">Hobbies</h1>
+		<p>
+		Coming soon!
+		</p>
+	</div>
 	
 	<footer>
-		<h1>Thanks for looking at my page! Feel free to check out my other links.<h1>
+		<h1>Thanks for looking at my page! Please check out my other links.<h1>
 		<ul>
 			<li id="footer-links"><a href="https://github.com/GSkid"  class="link">GitHub</a></li>
 			<li id="footer-links"><a href="https://www.linkedin.com/in/grant-skidmore/"  class="link">LinkedIn</a></li>
