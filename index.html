@@ -49,8 +49,14 @@
 			<p id="high-level">Settled with a team, the Banana Slug engineers worked together with the on-campus, Kresge Co-op Garden to come up with a set of top-down goals to orient the project in the right direction. During the planning stages, the team identified biggest challenges as the wireless communications, sensor arrays, the general central hub state machine, and the user interface. Starting with the wireless communications and the sensor arrays, these were considered large project milestones that significantly altered the state of the project once they were complete. Of these four major challenges, Grant worked primarily on the wireless comms and the central hub state machine while also helping out with the user interface.<br><br>To get the wireless communications working, Grant started out with getting two Arduinos communicating first. He initially struggled with figuring out what each pin did on the RF24 radio transceiver; but after some messing around, he was able to configure a master and slave network with a simplified version of the final communication protocol. To be clear, Grant had the help of the <a href=" http://tmrh20.github.io/RF24/index.html" class="link">RF24 library</a> authored by TMRh20. This library built the underlying framework in terms of handling the baseline transmission and reception of RF signals between devices. After getting the multi-node system working, Grant moved the central hub (the master node) to a Raspberry Pi Zero W, which was the final microcontroller choice for the central hub. This took some effort and Grant also started working on the central hub state machine at this point, and after a couple weeks of work, the central hub was able to communicate with the sensor network using the wireless radio transceivers. After that, it was just adding features and fine tuning the central hub to get the irrigation network to actually distribute water properly. This took a little bit of extra time because of the need for a multi-driver board to drive latching solenoid valves, but eventually everything worked as intended. The testing performed on the final system logged lots of environmental but the most interesting trends were the soil moisture content and light level.<br><br>Shown below are the data trends for soil moisture content and light levels for both sensors nodes tested.</p>
 			<div class="image">
 				<img src="./bin/Images/Validation-testing.png" id="validation-results" alt="Intuitive Auto Irrigation Testing Results"></img>
-				<h4 class="caption" id="validation-results-caption">The validation results highlight measured environmental trends for two distinct nodes. The trial was performed over 5 days and shows the efficacy of the Intuitive Auto Irrigation system.</h4>
+				<h4 class="caption" id="validation-results-caption">The validation results highlight measured environmental trends for two distinct nodes. The trial was performed over 5 days and shows the efficacy of the Intuitive Auto Irrigation system. Soil moisture trends are shown in blue/green; light level trends are shown in red/orange.</h4>
 			</div>
+			<p id="testing-explanation">In the image above, the soil moisture sensors kept track of the relative amount of moisture in the soil, which we were then compared against pre-set thresholds in order to determine if sufficient water was present in the system. The thresholds were deterined through empirical data after testing in multiple soil types; this would become one of the most challenging parts of our project as the sensor value changed significantly in differing soil types. Regardless, in our testing, we showed that the sytem is able to recognize when the soil conditions reach these different thresholds and responds accordingly, assuming other environmental conditions are also met. These responses are marked with vertical black lines that show when the hose turned on. These black lines then stayed on for a single 1 minute cycle after which, the soil moisture sensors reported higher soil moisture content.<br><br>In the end, we measured our project as using a total of 246mL for one week. Comparing this to the <a href="https://wateruseitwisely.com/100-ways-to-conserve/landscape-watering-guide/plant/" class="link">expected average of 567mL</a>, we claim that our system reduces wastewater consumption in residential irrigation by up to 50%. This number can vary depending on the soil type and type of plant, but for a alpha test, we were both satisfied and suprised at the efficacy of the system.</p>
+		</div>
+
+		<div class="mech">
+			<h2 class="section-sub-header">2.  Mechatronics - <a href="./bin/Reports/MechatronicsProject_Report.pdf" class="link"><em>Autonomous Robot</em></a></h2>
+			<p></p>
 		</div>
 	</div>
 	
@@ -71,15 +77,19 @@
 				<li class="prog-lang">Python</li>
 				<li class="comp-skill">SOLIDWORKS</li>
 				<li class="other-skill">Oscilloscopes / Lab Equipment</li>
-				<li class="prog-lang">Linux Terminal / Bash</li>
-				<li class="comp-skill">Eagle PCB Design</li>
-				<li class="other-skill">Computer Hardware Installation</li>
 				<li class="prog-lang">HTML</li>
-				<li class="comp-skill">PSpice</li>
-				<li class="other-skill">Google Sheets</li>
-				<li class="prog-lang">CSS</li>
-				<li class="comp-skill">Makefiles</li>
+				<li class="comp-skill">Eagle PCB Design</li>
 				<li class="other-skill">Public Speaking</li>
+				<li class="prog-lang">CSS</li>
+				<li class="comp-skill">PC Assmebly</li>
+				<li class="other-skill"></li>
+				<li class="prog-lang">Javascript</li>
+				<li class="comp-skill">Makefiles</li>
+				<li class="other-skill"></li>
+				<li class="prog-lang">SQLite</li>
+				<li class="comp-skill">Google Sheets</li>
+				<li class="other-skill"></li>
+				<li class="prog-lang">Linux Terminal / Bash</li>
 			</ul>
 		</div>
 		
@@ -88,7 +98,19 @@
 			<ul id="experiences">
 				<li class="exp">
 					<div class="exp-h-container">
+						<h3 class="exp-header">Tech Support Intern</h3>
+						<div class="duration">GAO Tek;</div>
+						<div class="duration"><em>Oct 2020 - Present</em></div>
+					</div>
+					<ul class="exp-description">
+						<li class="exp-item"> Provided virtual tech support including managing company webpages, complete data spreadsheets, & perform PC maintenance on company computers.</li>
+					</ul>
+				</li>
+
+				<li class="exp">
+					<div class="exp-h-container">
 						<h3 class="exp-header">Teaching Assistant</h3>
+						<div class="duration">UC Santa Cruz;</div>
 						<div class="duration"><em>Jan 2020 - June 2020</em></div>
 					</div>
 					<ul class="exp-description">
@@ -99,6 +121,7 @@
 				
 				<li class="exp">
 						<h3 class="exp-header">Student Instructor</h3>
+						<div class="duration">UC Santa Cruz;</div>
 						<div class="duration"><em>Sep 2017 - June 2020</em></div>
 					<ul class="exp-description">
 						<li class="exp-item">Instructed UCSC’s largest-ever student-taught class reaching up to 140 students per quarter. Using an average class size of 90 students, roughly 7% of the total school population eventually took my class over the 3 years I taught it.</li>
@@ -110,6 +133,7 @@
 				<li class="exp">
 					<div class="exp-h-container">
 						<h3 class="exp-header">Coach/Pro-Shop Assistant</h3>
+						<div class="duration">Deep Cliff Golf Course;</div>
 						<div class="duration"><em>Feb 2014 - Apr 2020</em></div>
 					</div>
 					<ul class="exp-description">
@@ -126,7 +150,7 @@
 			<div class="edu-container">
 				<h4><strong>B.S. Bioengineering</strong> with a focus in Bioelectronics</h4>
 				<h5>University of California, Santa Cruz (UCSC)</h5>
-				<h6><em>Graduated in June 2020 with honors</em> (GPA = 3.59)</h6>
+				<h6><em>Graduated with honors in June 2020</em> (GPA = 3.59)</h6>
 			</div>
 			
 		</div>
