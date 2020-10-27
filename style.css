@@ -69,6 +69,10 @@ header ul {
 	grid-column: span 1;
 }
 
+.about-me .link {
+	color: white;
+}
+
 .content {
 	border: 1px solid white;
 	padding: 10px;
