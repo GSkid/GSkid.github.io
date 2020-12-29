@@ -72,6 +72,22 @@
 			<p>Our robot, as shown in the image above, has three layers to the chassis. The lowest layer is where we put most of the heavy components in order to create a lower center of gravity. The components here included the microcontroller, which was an <a href="https://reference.digilentinc.com/reference/microprocessor/uno32/start" class="link">Uno32 Microcontroller Board</a>; the power distribution board, which had pinouts to connect all system components to 5V, 3.3V, or Gnd; 3 reflective infrared sensors, which were used to keep the bot on the playing field; the center bumper for collision detection; the driver board for the motors; and the motors themselves. The second layer then had the other 3 bumpers for collision detection, the pcb created for the 2kHz light sensor, and storage for the battery. The top layer had a small breakout board for power distribution, the two ultrasonic ping sensors, the side-mounted reflective optical sensor, the pcb for the EM sensor, and the ball dispensing mechanism which also housed the sensor for the EM sensor and the 2kHz light sensor. All three of these layers were made with Solidworks and then cut out of MDF using a laser cutter. To keep them all together, we used wood glue supported by hot glue and tape.<br><br>The robot was controlled by a depth-first hierarchichal state machine running on the <a href="https://reference.digilentinc.com/reference/microprocessor/uno32/start" class="link">Uno32 Microcontroller Board</a>. This state machine included four distinct states: The Top Level, Driving, Navigating Around the Tower, and Dispensing the Ball. These four state machines used the events and services framework created by J. Edward Carrayer of Stanford University to update the state machine on occurances from sensors and hardware peripherals. In addition to the 4 state machines, we had 4 services that generated events from the sensors. All the code was written in C and uploaded to the Uno32 using a custom bootloader created by one of the past TAs (Max Dunne). 
 			</p>
 		</div>
+
+		<div class="ekg">
+			<h2 class="section-sub-header">3.  Bioengineering Electronics - <a href="./bin/Reports/EKG_Amplifier_Report.pdf" class="link"><em>EKG Monitor</em></a></h2>
+			<p>One of the more difficult classes I took as an undergraduate was Analog Electronics for Bioengineers taught by Kevin Karplus. This class focused on applied electrical engineering, but performed in a bio-related environment. A prime example of this is the EKG monitor project. This project required us to develop a real-time EKG monitor using a system of 3 electroplated AgCl electrodes: one electrode was used for ground and two were used to generate a differential voltage signal. The voltage signal read from the two differential probes was passed through an intstrumentation amplifier, which fundamentally generates a single output from several inputs, and then passed through a series of filters and amplifiers to generate a clear and readable output.
+			</p>
+			<div id="image-box">
+				<div class="image">
+					<img src="./bin/Images/PCBBeforeFilter.jpg" id="ekgBeforeFilter" alt="EKG Monitor output before digital filtering"></img>
+					<h4 class="caption" id="mech-finals-caption">EKG Monitor output before digital filtering shows a very clearly defined ECG complex. While the signal is clear from all placement of the electrodes, there is still noise and a voltage bias on the output; digital filtering attempts to clean this up.</h4>
+				</div>
+				<div class="image">
+					<img src="./bin/Images/PCBAfterFilter.jpg" id="ekgAfterFilter" alt="EKG Monitor output after digital filtering"></img>
+					<h4 class="caption" id="mech-finals-caption">The previous picture was run through a digital filtering script to clean out the electrical noise. The output shows very elegant ECG waves with virtually no noise.</h4>
+				</div>
+			</div>
+		</div>
 	</div>
 	
 

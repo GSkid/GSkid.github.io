@@ -178,6 +178,11 @@ header ul {
 	margin: 20px;
 }
 
+#image-box .image {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 /* ONLINE RESUME */
 .resume {
 	position: relative;
