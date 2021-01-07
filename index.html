@@ -25,11 +25,11 @@
 	<div class="about-me">
 		<div class="content">
 			<h2 id="about-header">About Grant</h2>
-			<p>Grant is a 22 year-old, aspiring software engineer with a passion for learning and knack for quickly picking up new skills. He currently lives in the California Bay Area and is activley searching for a job. He recently graduated from UC Santa Cruz in June 2020 with a B.S. in Bioengineering, although most of his work was done working with software and electronics. He also enjoys public speaking and found a niche in the university as a student instructor, where (for 3 years) Grant taught the university's largest-ever student-taught class, reaching up to 140 students, which focused primarily on public speaking. That was one of the defining parts of his time at university and a way to express himself in a completely unique way.<br><br>In his free time, Grant enjoys cooking, working on creative projects, exploring new and hidden locations, and golfing. Grant was one of the two captains for the Deep Cliff Golf Course juniors team and won the championship both years he played. He has since gotten a rusty due to the lack of free-time while attending university in Santa Cruz but still maintains roughly a 9.6 HCP (on a good day).<br><br>The rest of this website serves to illustrate more about Grant and his professional skills. Effectively, this page is a navigable, more detailed resume with supplementary images and explanations. For more information, please feel free to reach out to grant at his email: grant.skidmore@gmail.com or click <a href="./bin/GrantSkidmore_Resume.pdf" class="link">HERE</a> for a pdf version of Grant's resume.</p>
-		</div>
-		<div class="image">
-			<img src="./bin/Images/ProfessionalPhoto.jpg" id="pro-image" alt="Grant Skidmore from sophmore year: as professional as it gets."></img>
-			<h4 class="caption" id="grant-caption">Grant Skidmore from sophmore year: as professional as it gets.<br><br>This picture is from UCSC's SlugMUN 2 conference where Grant served as a Crisis Director for a Model UN debate. Photo credits go to <a href="https://trulsprather.com/" class="link">Truls Prather</a>.</h4>
+			<p>Grant is a 22 year-old, aspiring software engineer with a passion for learning and knack for quickly picking up new skills. He currently lives in the California Bay Area and is activley searching for a job. He recently graduated from UC Santa Cruz in June 2020 with a B.S. in Bioengineering, although most of his work was done working with software and electronics. He also enjoys public speaking and found a niche in the university as a student instructor, where (for 3 years) Grant taught the university's largest-ever student-taught class, reaching up to 140 students, which focused primarily on public speaking. That was one of the defining parts of his time at university and a way to express himself in a completely unique way.<br><br>In his free time, Grant enjoys cooking, working on creative projects, exploring new and hidden locations, and golfing. Grant was one of the two captains for the Deep Cliff Golf Course juniors team and won the championship both years he played. He has since gotten a rusty due to the lack of free-time while attending university in Santa Cruz but still maintains roughly a 9.6 HCP.<br><br>The rest of this website serves to illustrate more about Grant and his professional skills. Effectively, this page is a navigable, more detailed resume with supplementary images and explanations. For more information, please feel free to reach out to grant at his email: grant.skidmore@gmail.com or click <a href="./bin/GrantSkidmore_Resume.pdf" class="link">HERE</a> for a pdf version of Grant's resume.</p>
+			<div class="image">
+				<img src="./bin/Images/ProfessionalPhoto.jpg" id="pro-image" alt="Grant Skidmore from sophmore year: as professional as it gets."></img>
+				<h4 class="caption" id="grant-caption">Grant Skidmore from sophmore year: as professional as it gets.<br><br>This picture is from UCSC's SlugMUN 2 conference where Grant served as a Crisis Director for a Model UN debate. Photo credits go to <a href="https://trulsprather.com/" class="link">Truls Prather</a>.</h4>
+			</div>
 		</div>
 	</div>
 	
@@ -42,7 +42,7 @@
 		<div class="thesis">
 			<h2 class="section-sub-header">1.  Senior Thesis - <a href="./bin/Reports/Intuitive_Auto_Irrigation_Report.pdf" class="link"><em>Intuitive Auto Irrigation</em></a></h2>
 			<p id="intro">Acknowledging residential irrigation as a significant contributor to unnecessary wastewater, Grant and the Intuitive Auto-Irrigation team devised a 	water-efficient automatic irrigation system that uses an array of sensors and weather forecasting data to determine when to efficiently water plants and minimize water consumption. Through wireless communication, sensor arrays relay information to a central hub that collects environmental data and triggers water delivery when monitored soil is deemed dry and conditions are optimal for irrigation. The goal of the automatic irrigation system is to reduce unnecessary water consumption without sacrificing plant health, effectively leading to a more sustainable method of residential landscaping and gardening practices.<br><br>The Intuitive Auto Irrigation project started as a creative, side adventure in the summer of 2019. Grant initially wanted to learn how to use <a href="https://www.arduino.cc/" class="link">Arduino</a> microcontrollers and apply concepts from one of his previous electronics class to something he respected, Nature. However, Grant quickly realized there was a lot more that goes into irrigation systems, especially autonomous versions, than just a simple microcontroller. Especially when trying to learn to be an engineer, Grant wanted the work to live up to professional engineering standards which meant the addition of significant time investment as well. So when the next quarter came around, Grant found the perfect opportunity to revisit this idea in his Senior Capstone Design course. The premise of this course is to have students come up with project ideas and divide into small teams, effectively simulating a coorporate-esque job with the teaching staff as 'company managers'. To his surprise, Grant found a team of 3, highly qualified engineers shortly after sharing his idea. Together forming a squad of 3 bioengineers and 1 electrical engineer, Grant finally had the man power to fulfill the project goals.</p>
-			<div class="image">
+			<div class="image" id="iai">
 				<img src="./bin/Images/Central_Hub.jpg" id="central-hub" alt="The Intuitive Auto Irrigation Central Hub"></img>
 				<img src="./bin/Images/SensorArrayAssembly.jpg" id="sensor-array" alt="The Intuitive Auto Irrigation Sensor Array"></img>
 				<h4 class="caption" id="central-hub-caption">On the left, the final design of the Intuitive Auto Irrigation Central Hub sports a 4 push-button interface to control the 2.5" OLED screen. On the right, the final prototype design for the sensor nodes encased them in protoboards for limited water protection. Originally the team planned to 3D print an enclosure for them, but the on-campus 3D printer closed due to the pandemic. The final result still worked surprisingly well.</h4>
@@ -65,9 +65,11 @@
 			</div>
 			<p>This was not an easy task, especially in under two minutes, so we spent a lot of time planning and working on the physical design of the robot. We decided to stay with only two wheels located in the middle of the robot which allowed us to turn left and right without moving forward or backward. We also decided on a side-facing ball dispensing mechanism so that we could easily drive forward and backward parallel to the tower walls. As for sensors, we definitely needed at least 4 reflective infrared optical sensors to detct black vs white surfaces; we also needed a custom infrared light sensor to pick up 2kHz light pulses and a custom electromagnetic field detector to pick up 25-27kHz EM signals. For other sensors, we decided to use 4 physical switches for collision detection and 2 ultrasonic ping sensors for distance tracking. For motors, we picked up two 12V DC motors off Amazon with high torque and low rpm. This allowed our robot to go down to slower speeds than we would have otherwise been able to with higher rpm motors. Essentially we traded off high speed for low speed and more power. 
 			</p>
-			<div class="image">
-				<img src="./bin/Images/MechBot_Iso1.png" id="bot-iso1" alt="Isometric View of the Completed Robot Submission"></img>
-				<h4 class="caption" id="mech-finals-caption">Isometric view of the robot with the front of the robot on the left and the back of the robot on the right.</h4>
+			<div id="iso-div">
+				<div class="image">
+					<img src="./bin/Images/MechBot_Iso1.png" id="bot-iso1" alt="Isometric View of the Completed Robot Submission"></img>
+					<h4 class="caption" id="mech-finals-caption">Isometric view of the robot with the front of the robot on the left and the back of the robot on the right.</h4>
+				</div>
 			</div>
 			<p>Our robot, as shown in the image above, has three layers to the chassis. The lowest layer is where we put most of the heavy components in order to create a lower center of gravity. The components here included the microcontroller, which was an <a href="https://reference.digilentinc.com/reference/microprocessor/uno32/start" class="link">Uno32 Microcontroller Board</a>; the power distribution board, which had pinouts to connect all system components to 5V, 3.3V, or Gnd; 3 reflective infrared sensors, which were used to keep the bot on the playing field; the center bumper for collision detection; the driver board for the motors; and the motors themselves. The second layer then had the other 3 bumpers for collision detection, the pcb created for the 2kHz light sensor, and storage for the battery. The top layer had a small breakout board for power distribution, the two ultrasonic ping sensors, the side-mounted reflective optical sensor, the pcb for the EM sensor, and the ball dispensing mechanism which also housed the sensor for the EM sensor and the 2kHz light sensor. All three of these layers were made with Solidworks and then cut out of MDF using a laser cutter. To keep them all together, we used wood glue supported by hot glue and tape.<br><br>The robot was controlled by a depth-first hierarchichal state machine running on the <a href="https://reference.digilentinc.com/reference/microprocessor/uno32/start" class="link">Uno32 Microcontroller Board</a>. This state machine included four distinct states: The Top Level, Driving, Navigating Around the Tower, and Dispensing the Ball. These four state machines used the events and services framework created by J. Edward Carrayer of Stanford University to update the state machine on occurances from sensors and hardware peripherals. In addition to the 4 state machines, we had 4 services that generated events from the sensors. All the code was written in C and uploaded to the Uno32 using a custom bootloader created by one of the past TAs (Max Dunne). 
 			</p>
@@ -100,27 +102,28 @@
 			<h2 class="section-sub-header">1.  Skills</h2>
 			<ul id="skill-grid">
 				<li class="skill-header">Programming Languages</li>
-				<li class="skill-header">Computer Skills</li>
+				<li class="skill-header">Technology Skills</li>
 				<li class="skill-header">Other Skills</li>
 				<li class="prog-lang">C & C++</li>
 				<li class="comp-skill">Git / Github</li>
-				<li class="other-skill">LaTeX Documentation</li>
-				<li class="prog-lang">Python</li>
-				<li class="comp-skill">SOLIDWORKS</li>
-				<li class="other-skill">Oscilloscopes / Lab Equipment</li>
-				<li class="prog-lang">HTML</li>
-				<li class="comp-skill">Eagle PCB Design</li>
 				<li class="other-skill">Public Speaking</li>
+				<li class="prog-lang">Python</li>
+				<li class="comp-skill">Oscilloscopes / Lab Equipment</li>
+				<li class="other-skill">Time Management</li>
+				<li class="prog-lang">HTML</li>
+				<li class="comp-skill">Jira</li>
+				<li class="other-skill">Standardized Reports</li>
 				<li class="prog-lang">CSS</li>
 				<li class="comp-skill">PC Assmebly</li>
 				<li class="other-skill"></li>
 				<li class="prog-lang">Javascript</li>
-				<li class="comp-skill">Makefiles</li>
+				<li class="comp-skill">LAN Networking</li>
 				<li class="other-skill"></li>
 				<li class="prog-lang">SQLite</li>
-				<li class="comp-skill">Google Sheets</li>
+				<li class="comp-skill">GNU Make</li>
 				<li class="other-skill"></li>
-				<li class="prog-lang">Linux Terminal / Bash</li>
+				<li class="prog-lang">Terminal / Bash</li>
+				<li class="comp-skill">LaTeX Documentation</li>
 			</ul>
 		</div>
 		
@@ -134,8 +137,8 @@
 						<div class="duration"><em>Oct 2020 - Present</em></div>
 					</div>
 					<ul class="exp-description">
-						<li class="exp-item"> Re-built and managed network access to accommodate wired connections for all company PCs. The prior installment of network hardware limited the connection speeds to 100Mbps down because of out-of-date network switches, despite paying for a Comcast Business subscription that provides 1Gbps down. I re-routed all the cables, added extra wirless acess points, and upgraded all the switches increasing average connection speeds by 300% - 1000%.</li>
-						<li class="exp-item"> Cut IT costs (internet/TV/phone/security) from ~$1300/month to ~$400/month. Even though the golf course was previously subscribed to the 1Gbps Comcast Business plan, I switched down to a 300Mbps plan since there was no need for such a high-speed internet plan at a golf course. I also removed the VoiceEdge Select package which simply provides speech-to-text capabilites for TV remotes. And finally, I replaced all the security cameras (which were leased for north of $200/month) in favor of a Lorex system from Costco which basically payed for itself in just over 2 months.</li>
+						<li class="exp-item"> Re-built and managed network access to accommodate wired connections for all company PCs. The prior installment of network hardware limited the connection speeds to 100Mbps down (averaged about 40Mbps) because of out-of-date network switches, despite paying for a Comcast Business subscription that provides 1Gbps down. I re-routed all the cables, added extra wirless acess points, and upgraded all the switches increasing average connection speeds to about 440Mbps (up by about 1000%).</li>
+						<li class="exp-item"> Cut IT costs (internet/TV/phone/security) from ~$1300/month to ~$600/month. Even though the golf course was previously subscribed to the 1Gbps Comcast Business plan with a 2 year contract, I was able to find other ways to cut IT costs. First, I reduced the number of voice lines which costed $25/month due to phone rentals. I also replaced all the security cameras (which were leased for north of $200/month) in favor of a Lorex system which basically payed for itself in just over 3 months.</li>
 						<li class="exp-item"> Switched the whole golf course/restaurant/PoS system to a much simpler, browser-based PoS system called Lightspeed. Previously, Bay View used a complicated and costly service to manage the PoS for all operations. Instead, I helped switch them to a much more user-friendly system called Lightspeed which has proved to be several times more efficient and easier to use for the many employees unfamiliar with technology.
 					</ul>
 				</li>
@@ -157,7 +160,7 @@
 						<div class="duration"><em>Jan 2020 - June 2020</em></div>
 					</div>
 					<ul class="exp-description">
-						<li class="exp-item"><strong>CE13:</strong> assisted students with C coding projects and grading issues. As head tutor, I was responsible for three lab sessions per week where I guide and answer student questions.</li>
+						<li class="exp-item"><strong>CE13:</strong> assisted students with C coding projects and grading issues. As head tutor, I was responsible for three lab sessions per week where I guide and answer student questions. I also contributed to the teaching staff’s GitLab repo by updating and fixing autograder pyhon scripts used by the tutors.</li>
 						<li class="exp-item"><strong>BME51 A/B:</strong> graded student reports and assignments; tested & validated electrical designs. Lots of writing for this class so there was a lot of grading.</li>
 					</ul>
 				</li>

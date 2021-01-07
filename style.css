@@ -46,27 +46,23 @@ header ul {
 .about-me {
 	position: relative;
 	top: 225px;
-	left: 50px;
+	right: 0;
 	margin: 0 auto;
 	width: 50%;
-	min-width: 600px;
-	display: grid;
-	grid-template-columns: repeat(2, 555px);
 }
 	
-#about-header{
+#about-header {
 	font-family: Helvetica, Montserrat;
 	font-size: 24px;
 	text-align: left;
-	grid-column: span 2;
 }
 	
-.about-me p{
+.about-me p {
+	border: 1px solid white;
 	font-family: Helvetica, Montserrat;
 	font-size: 16px;
 	text-align: left;
-	padding-top: 0px;
-	grid-column: span 1;
+	padding: 15px;
 }
 
 .about-me .link {
@@ -74,23 +70,28 @@ header ul {
 }
 
 .content {
-	border: 1px solid white;
 	padding: 10px;
 }
 
 .about-me .image {
-	justify-self: end;
+	width: 45%;
+	margin-left: auto;
+	margin-right: auto;
 	border: 1px solid white;
+	text-align: center;
 	padding: 10px;
 }
 
 #pro-image {
-	width: 500px;
-	grid-column: span 1;
+	margin: auto;
+	width: 97%;
+	max-width: 550px;
 	border: 1px solid white;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+}
+
+.about-me .caption {
+	max-width: 600px;
+	margin: auto;
 }
 
 /* Projects */
@@ -144,6 +145,8 @@ header ul {
 	padding-bottom: 5px;
 	margin-bottom: 15px;
 	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .projects img {
@@ -163,9 +166,26 @@ header ul {
 	margin-top: 20px;
 }
 
+#iai .caption {
+	max-width: 1020px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #validation-results {
-	width: 90%;
+	width: 94%;
 	margin: 20px;
+}
+
+#Mech-Final {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#Mech-Final .caption {
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
 #mech-finals {
@@ -173,14 +193,47 @@ header ul {
 	margin: 20px;
 }
 
+.mech .image {
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.mech .image .caption {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+#iso-div {
+	width: 85%;
+	max-width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#iso-div .caption {
+	max-width: 550px;
+	margin: auto;
+}
+
 #bot-iso1 {
-	width: 60%;
+	width: 80%;
+	max-width: 500px;
 	margin: 20px;
 }
 
-#image-box .image {
+#image-box {
 	padding-top: 20px;
 	padding-bottom: 20px;
+	width: 100%;
+	margin: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#image-box img {
+	width: 94%;
+	margin: 20px;
 }
 
 /* ONLINE RESUME */
@@ -211,7 +264,7 @@ header ul {
 
 .skill-header {
 	margin-right: 40px;
-	font-size: 30px;
+	font-size: 22px;
 	font-weight: 600;
 	text-decoration: underline;
 }
