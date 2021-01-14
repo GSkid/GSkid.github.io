@@ -177,6 +177,10 @@ header ul {
 	margin: 20px;
 }
 
+.mech {
+	margin-top: 100px;
+}
+
 #Mech-Final {
 	width: 100%;
 	margin-right: auto;
@@ -225,7 +229,7 @@ header ul {
 #image-box {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	width: 100%;
+	width: 85%;
 	margin: 20px;
 	margin-right: auto;
 	margin-left: auto;
@@ -234,6 +238,10 @@ header ul {
 #image-box img {
 	width: 94%;
 	margin: 20px;
+}
+
+.ekg {
+	margin-top: 100px;
 }
 
 /* ONLINE RESUME */
